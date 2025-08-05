@@ -1,7 +1,3 @@
-Parfait, un bon `README.md` peut vraiment valoriser ton projet, surtout si tu le publies sur GitHub ou Hugging Face. Voici un **exemple de README professionnel, clair et attractif**, que tu pourras adapter à ton projet `got_rag`.
-
----
-
 ```markdown
 # 🐉 Game of Thrones RAG App
 
@@ -22,7 +18,7 @@ Un projet de **RAG (Retrieval-Augmented Generation)** en français, basé sur le
 
 ## 📂 Arborescence du projet
 
-```
+```markdown
 
 got\_rag/
 │
@@ -135,3 +131,5 @@ Projet open source sous licence MIT.
 * [ ] Mode conversationnel (chat avec mémoire)
 * [ ] Support audio avec Whisper
 
+
+```
