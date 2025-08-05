@@ -1,0 +1,6 @@
+got_rag/__pycache__/
+*.pyc
+*.bin
+*.gguf
+venv/
+.cache/

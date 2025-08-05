@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Game of Thrones - RAG QA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <h1>Pose ta question sur Game of Thrones</h1>
+        <form method="POST">
+            <input type="text" name="question" placeholder="Ex: Qui est la mère de Jon Snow ?" required value="{{ question | default('') }}" />
+            <button type="submit">Poser la question</button>
+        </form>
+
+        {% if question %}
+        <div>
+            <div class="label">Question :</div>
+            <div class="result">{{ question }}</div>
+        </div>
+        {% endif %}
+
+        {% if answer %}
+        <div style="margin-top: 20px;">
+            <div class="label">Réponse :</div>
+            <div class="result">{{ answer }}</div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
