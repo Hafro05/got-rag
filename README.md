@@ -18,7 +18,6 @@ Un projet de **RAG (Retrieval-Augmented Generation)** en français, basé sur le
 
 ## 📂 Arborescence du projet
 
-```markdown
 
 got\_rag/
 │
@@ -81,10 +80,10 @@ Ce projet utilise un pipeline de type **RAG (Retrieval-Augmented Generation)** :
 
 ## 🛠️ Modèles utilisés
 
-| Type           | Modèle                                                        | Source       |
-| -------------- | ------------------------------------------------------------- | ------------ |
-| Embedding      | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` | Hugging Face |
-| LLM (français) | `google/flan-t5-base` (`mistralai/Mistral-7B-Instruct-v0.1`)  | Hugging Face |
+| Type           | Modèle                                                                   | Source       |
+| -------------- | ------------------------------------------------------------------------ | ------------ |
+| Embedding      | `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`            | Hugging Face |
+| LLM (français) | `google/flan-t5-base` (`mistralai/Mistral-7B-Instruct-v0.1` si posible)  | Hugging Face |
 
 💡 Tu peux facilement modifier ces modèles dans le fichier `embedder.py` et `rag_gain.py`.
 
